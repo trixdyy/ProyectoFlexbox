@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 1.25rem 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main-body {
+    display: flex;
+    flex: 1;
+}
+
+.left-nav, .right-aside {
+    flex: 0 0 220px;
+    background-color: #f1f5f9;
+    padding: 1.5rem;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+    }
+    .left-nav, .right-aside {
+        flex: auto;
+    }
+}
